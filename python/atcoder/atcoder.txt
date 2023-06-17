@@ -1,0 +1,84 @@
+atcoderメモpython
+
+anaconda
+cd desktop/programing/python/atcoder
+python a.py
+
+入力
+
+・単純入力
+N = int(input())
+N=input()文字列の読み取り
+
+・単純配列
+S =[0]*N
+
+・リスト
+A = [int(input()) for _ in range(N)]
+list(map(int,input().split()))
+
+・セット：要素に順番がなく、重複なし
+a=set([])
+a = set(int(input()) for _ in range(m))
+    a.add(i)　これで要素を足せる
+・マップ
+n,m = map(int, input().split())
+マップでの縦の行の読み取り　二次配列の代わりにも使える
+for i in range(M):
+    x,y,c=map(int,input().split())
+
+・配列操作
+x[0:len(x)-1]　範囲指定　リストの0から長さ引く1まで
+
+・アットコーダでよく使われるあまり
+mod = 1000000007
+・除算演算子切り捨て
+除算演算子 // は、分数に対して問題文に定義されている通りの floor 関数 ⌊ ⌋ を適用したもの
+X // 10
+一般に、A を B で切り捨て除算したい場合も、A // B と書けば正しく動作します。普段 int(A / B) と実装していた人はこれを機に A // B を使用することを推奨します。
+・四捨五入
+round(x)
+・ルート
+import math
+math.sqrt(x)
+
+・最小値、最大値
+min(a),max(a)リストの中身を探査すること可能
+ans=min(a)+min(b)
+
+・進数に変換
+与えられた数字を2進数に変換する
+format(num, 'b') プレフィックスなしの2進数文字列
+
+・順列取得
+import itertools
+t = list(itertools.permutations(range(5), 4))
+・シフト演算
+右から1が出現するまで0の個数を数える
+[::-1]：文字列を逆順にする
+
+find('1')：最初に1が出現する箇所を見つける
+
+・判定
+・数字判定
+s[a+i].isdecimal()　ｓは文字列でもおけ
+
+・アルファベット全部小文字
+import string
+alphabetStr = string.ascii_lowercase
+
+・ソート
+昇順ソート
+list.sort()
+降順ソート
+list.sort(reverse=True)
+keyを使うことで任意の条件
+長さ順ソート
+words.sort(key=len)
+
+・アルゴリズム
+
+・動的計画法(dp)
+dp[i]=dp[i-1]+dp[i-2]
+ai=ai-1+ai-2が成り立つときに使える他にもi-3など複雑な形でも行ける。
+
