@@ -1,0 +1,57 @@
+DOMの操作
+document.getElementById("IDをここへ").textContent="hello"
+IDの中身の書き換え<body id="ID">
+
+document.getElementById("ID").value;
+
+
+var container=document.getElementById("container");
+var item=document.createElement("li");
+item.textContent"hello";
+container.appendChild(item);
+
+イベント
+<button onclick="関数（）"></button>
+        onload
+        
+
+CSS
+クラス class="クラス名"
+<style>
+   タグ　＊（全て）　＃ID .クラス名｛
+プロパティ名：値；
+｝
+プロパティ　値例
+font-size:12px
+font-style:italic;
+color:yellow;
+
+配列　var 配列名=[1,2,6,7];
+                ["a","b"];
+配列の長さ　配列名.length
+
+for(var i=0;i<10;i++){
+}
+a==b a!=b 
+
+function keydown(evt){
+if(evt.keyCode==37)ship.moveL=true;   37右　３９左
+}
+switch(式){
+case　値1:式1;break;
+default:式５；break;
+function keyDown(e){
+var s="";
+switch(e.keyCode){
+case 37:s="左";break;
+case 38:s="上";break;
+case 39:s="右";break;
+case 40:s="下";break;
+default:s="それ以外";break;
+}
+}
+window.addEventListener('keydown',keydown);
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>snakebite</title>
+
+<script type="text/javascript">
+var w,h,s=20;
+var snake=[],food=[];
+var keyCode=0;
+var point=0;
+var timer=NaN;
+var ctx;
+
+//point object
+function point(x,y){
+this.x=x;
+this.y=y;
+}
+//init
+function init(){
+var canvas=document.getElementById('field');
+w=canvas.width/s;
+h=canvas.height/s;
+ctx=canvas.getContext('2d');
+ctx.font="20px sans-serif";
+//snake init
+snake.push(new point(w/2,h/2));
+//‰a‚Ìinit
+
+for(var i=0;i<10;i++){
+addFood();
+}
+timer=setInterval("tick()",200);
+window.onkeydown=keydown;
+}
+//‰a‚Ì’Ç‰Á
+
+function addFood(){
+while(true){
+var x=Math.floor(Math.random()*w);
+var y=Math.floor(Math.random()*h);
+if(isHit(foods,x,y)||isHit(snake,x,y)){
+continue;
+}
+
+foods.push(new point(x,y));
+break;
+}
+}
+//Õ“Ë
+function isHit(data,x,y){
+for(var i=0;i<data.length;i++){
+if(data[i].x==x&&data[i].y==y){
+return true;
+}
+}
+return false;
+}
+
+function moveFood(x,y){
+
+foods=foods.filter(function(p){
+return(p.x!=x||p.y!=y);
+});
+addFood();
+}
+
+
+function tick(){
+var x=snake[0].x;
+var y=snake[0]
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+</script>
+
+
+
+
+</html>

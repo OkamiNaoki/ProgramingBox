@@ -1,0 +1,1 @@
+graphics_toolkit("gnuplot")pkg load control A=[0.1 0.2; 0.3 0.4]eig(A)x0=[5;6]Ts=0.01sys=ss(A,[0;1],[1 0],0,Ts)% sys=ss(A,[0;1],[1 0],0)initial(sys,x0)impulse(sys,x0)step(sys,x0)

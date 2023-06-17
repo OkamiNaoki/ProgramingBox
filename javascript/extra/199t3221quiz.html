@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <link rel="stylesheet" href="./slidestyle.css">
+    <script src="quizscript.js"></script>
+    <meta charset="utf-8">
+    <title>クイズ</title>
+  </head>
+  <body>
+    <div class="header">
+    <img class="headerImg" src="./logo.jpg" alt="ここに画像が挿入されないときの文字">
+    <h1 class="headingLarge">コンピュータウイルス及びにその<span class="partLarge">対策</span>について</h1>
+    <ol class="navigation">
+        <li class="navigationLi"><a href="./index.html">トップページ</a></li>
+      <li class="navigationLi"><a href="./199t3221page2.html">コンピュータウイルスとその対策</a></li>
+      <li class="navigationLi">クイズ</li>
+      <li class="navigationLi"><a href="./199t3221selfcheck.html">セルフチェック</a></li>
+    </ol>
+    </div>
+    <div class="article">
+    <h2 class="articleH2">クイズ「プレゼーションが伝わったか」</h2>
+    <form id="quizForm">
+      <p class="articleP">[問1](5点)<br>コンピュータウイルスの対策として適当なものはどれか</p>
+      <ul class="articleFormUl">
+        <li>
+          <label><input type="radio" name="radios1" value="0">対策ソフトをダウンロードする</label>
+        </li>
+        <li>
+          <label><input type="radio" name="radios1" value="1">端末を最新状態にしない</label>
+        </li>
+        <li>
+          <label><input type="radio" name="radios1" value="2">怪しいサイトを開く</label>
+        </li>
+        <li>
+          <label><input type="radio" name="radios1" value="3">身に覚えのないメールを開く</label>
+        </li>
+      </ul>
+    <p class="articleP">[問2](5点)<br>コンピュータウイルスについて正しいものはどれか</p>
+      <ul class="articleFormUl">
+        <li>
+          <label><input type="radio" name="radios2" value="0">被害は増え続けている</label>
+        </li>
+        <li>
+          <label><input type="radio" name="radios2" value="1">現在は被害はない</label>
+        </li>
+        <li>
+          <label><input type="radio" name="radios2" value="2">被害件数は数百件ほどしかない</label>
+        </li>
+        <li>
+          <label><input type="radio" name="radios2" value="3">被害は年々減少している</label>
+        </li>
+      </ul>
+<p class="articleP"><input class="submition" type="button" value="解答送信" onclick="pressedBtn()"></p>
+  <p class="articleP" id="quizReport">ここに結果を表示</p>
+</form>
+    </div>
+    <div class="footer">
+      <ul class="footerUL">
+      <li>199t3221 橋本隼人 (<a href="https://www.kumamoto-u.ac.jp">熊本大学工学部</a>)</li>
+      <li>情報基礎B</li>
+      <li>クイズ</li>
+    </ul>
+    </div>
+  </body>
+</html>
